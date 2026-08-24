@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, Arial, sans-serif;
+    background: #f5f7fb;
+    color: #182033;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+header {
+    padding: 46px 7%;
+    background: #121827;
+    color: white;
+}
+
+header h1 {
+    margin: 8px 0;
+    font-size: 42px;
+    letter-spacing: -1px;
+}
+
+header p {
+    max-width: 700px;
+    color: #b9c1d4;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #7dd3fc;
+}
+
+main {
+    max-width: 1250px;
+    margin: 30px auto;
+    padding: 0 20px 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #e3e7ef;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 6px 25px rgba(20, 30, 50, 0.05);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 15px;
+    margin: 22px 0 9px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 18px 0 8px;
+}
+
+.dropzone {
+    border: 2px dashed #cfd6e3;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropzone input {
+    display: none;
+}
+
+.dropzone strong,
+.dropzone span {
+    display: block;
+}
+
+.dropzone span {
+    margin-top: 7px;
+    color: #7a8498;
+    font-size: 12px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #d8deea;
+    border-radius: 10px;
+    padding: 13px;
+    resize: vertical;
+    font: inherit;
+}
+
+button {
+    border: 0;
+    border-radius: 10px;
+    padding: 13px 18px;
+    background: #2563eb;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.secondary {
+    width: auto;
+    margin: 0;
+    background: #eef2f7;
+    color: #253047;
+}
+
+.error {
+    background: #fff0f0;
+    color: #b42318;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.empty {
+    color: #7b8496;
+    background: #f8f9fc;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    background: #f7f9ff;
+    border-radius: 12px;
+}
+
+.scoreNumber {
+    font-size: 45px;
+    font-weight: 900;
+    color: #2563eb;
+}
+
+.scoreNumber small {
+    font-size: 17px;
+    color: #7a8498;
+}
+
+.score h3 {
+    margin: 0;
+    font-size: 21px;
+}
+
+.score p {
+    margin: 5px 0 0;
+    color: #718096;
+}
+
+.justification {
+    line-height: 1.6;
+    color: #4c566a;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.chip {
+    padding: 6px 10px;
+    background: #edf1f7;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.chip.good {
+    background: #e8f7ee;
+    color: #18794e;
+}
+
+.chip.bad {
+    background: #fff0f0;
+    color: #b42318;
+}
+
+.experience {
+    border-left: 3px solid #d9e0ed;
+    padding: 8px 0 8px 13px;
+    margin-top: 10px;
+}
+
+.experience small {
+    display: block;
+    color: #7a8498;
+    margin-top: 3px;
+}
+
+.experience p {
+    color: #596377;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+.sectionHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sectionHead p {
+    color: #7a8498;
+    margin-top: -10px;
+}
+
+.tableWrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 13px 10px;
+    border-bottom: 1px solid #edf0f5;
+    font-size: 13px;
+}
+
+th {
+    color: #687287;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+td small {
+    color: #7a8498;
+}
+
+
+@media (max-width: 900px) {
+
+    .grid,
+    .two {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}
